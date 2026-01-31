@@ -1,7 +1,7 @@
 /* MAIN LAYOUT */
 .aiLayout {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   background: #f6f8ff;
   width: 100%;
   overflow: hidden;  
