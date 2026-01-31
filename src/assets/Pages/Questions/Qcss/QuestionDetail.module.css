@@ -44,6 +44,7 @@
   object-fit: cover;
 }
 
+
 /* User text */
 .userInfo {
   display: flex;
@@ -176,6 +177,7 @@
   font-size: 15px;
   line-height: 1.7;
   color: #333;
+  margin-bottom: 5px;
 }
 
 .answer_user {
@@ -193,9 +195,16 @@
   color: #777;
 }
 
+.avatar_block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .answer_user {
-  font-weight: 600;
+  font-size: 12px;
   color: #444;
+  white-space: nowrap;
 }
 
 .answer_time {
@@ -467,4 +476,97 @@
 .cancelBtn:hover,
 .deleteBtn:hover{
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+
+  .qna_page {
+    margin: 30px auto;
+    padding: 0 16px 70px;
+  }
+
+  /* Question card */
+  .question_card {
+    padding: 16px;
+  }
+
+  .question_title {
+    font-size: 16px;
+  }
+
+  .question_desc {
+    font-size: 15px;
+  }
+
+  /* User box */
+  .userBox {
+    gap: 10px;
+  }
+
+  /* Answer card */
+  .answer_card {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .answer_avatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .answer_content {
+    width: 100%;
+  }
+
+  .answer_meta {
+    flex-wrap: wrap;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    .edit_delete {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  /* Answer box */
+  .answer_box {
+    padding: 28px 24px;
+  }
+
+  .answer_textarea,
+  .edit_box textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .question_title {
+    font-size: 16px;
+  }
+
+  .answers_title {
+    font-size: 18px;
+  }
+
+  .answer_text {
+    font-size: 14px;
+  }
+
+  .answer_btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .highlight {
+    margin-left: 8px;
+    font-size: 11px;
+  }
+
+  .answer_box h3 {
+    font-size: 20px;
+  }
 }

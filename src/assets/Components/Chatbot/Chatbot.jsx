@@ -76,7 +76,7 @@ function Chatbot() {
           {extended && <p className={style.slogan}>Your coding assistant</p>}
 
           {/* New Chat */}
-          <div className={style.newChat} id={!extended ? style.circle : ""}>
+          <div className={style.newChat} onClick={newChat} id={!extended ? style.circle : ""}>
             <AddIcon style={{ fontSize: 30 }} />
             {extended && <div onClick={newChat}><p>New Chat</p></div>}
           </div>

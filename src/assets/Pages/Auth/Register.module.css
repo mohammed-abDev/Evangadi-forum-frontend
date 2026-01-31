@@ -139,9 +139,6 @@ button:disabled {
     margin-top: 2px;
     text-align: left;
     align-self: flex-start;
-    /* font-size: 13px;
-    margin-top: 1px;
-    color: red !important; */
 }
 
 .errorRow p{
@@ -253,6 +250,10 @@ button:disabled {
         transform: translateY(0px);
     }
 }
+.FL_name_input input:last-child{
+        width: 45% !important;
+        max-width: 350px;
+    }
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .container {
@@ -269,13 +270,13 @@ button:disabled {
 
     .right {
         padding: 40px 25px;
+        min-width: 0;
     }
-   
 
     .form input {
         padding: 12px 15px;
     }
-  
+
     .form button,
     .loginBtn {
         width: 100%;
@@ -284,6 +285,11 @@ button:disabled {
     .FL_name_input {
         display: flex;
         flex-direction: column;
+    }
+
+    .FL_name_input input:last-child{
+        min-width: 100%;
+        max-width: 300px !important;
     }
 }  
 
@@ -296,6 +302,8 @@ button:disabled {
         font-size: 26px;
     }
     .FL_name_input input:last-child{
-        min-width: 300px !important;
+        width: 2500px !important;
+        max-width: 100% !important;
+
     }
 }

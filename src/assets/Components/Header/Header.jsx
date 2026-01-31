@@ -11,7 +11,11 @@ function Header() {
   const { state, setState } = useContext(AppContext);
 
   const [showProfile, setShowProfile] = useState(false);
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+  console.log("Header state:", state);
+}, [state]);
 
   const handleUserInOut = () => {
     if (!state.username) {
@@ -23,7 +27,7 @@ function Header() {
       navigate("/login");
     }
   };
-
+  
   const menuHandler = () =>{
     setShowMenu((prev) => !prev);
   }

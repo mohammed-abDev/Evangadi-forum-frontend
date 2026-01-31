@@ -73,6 +73,7 @@ function Login() {
         token: res.data.token,
         username: res.data.username,
         userid: res.data.userid,
+        
       });
       // redirect
       navigate("/home");

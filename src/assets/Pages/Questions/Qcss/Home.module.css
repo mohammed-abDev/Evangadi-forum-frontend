@@ -249,3 +249,81 @@
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .page {
+        padding: 20px;
+    }
+
+  /* Top bar */
+    .topBar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+  /* Question card */
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+  /* User section */
+    .user {
+      width: 100%;
+    }
+
+  /* Question and legend */
+  .question_legend {
+    min-width: unset;
+    flex-direction: column-reverse;
+    gap: 6px;
+  }
+
+  .question {
+    font-size: 15px;
+  }
+
+  /* Arrow */
+  .arrow {
+    align-self: flex-end;
+  }
+
+  /* Search */
+  .search_form {
+    flex-direction: column;
+    gap: 12px;
+    align-items:normal !important;
+  }
+
+  .search_form button {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .askBtn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .welcome {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+  }
+
+  .card {
+    padding: 14px 16px;
+  }
+
+  .new_badge {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+}
+

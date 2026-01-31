@@ -112,7 +112,7 @@ function Home() {
         <form onSubmit={handleSearch} className={style.search_form}>
           <input
             type="text"
-            placeholder="Search questions,html,css,js,react l....."
+            placeholder="Search questions,html,css,js,react ....."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />

@@ -1,6 +1,5 @@
 import React,{memo} from 'react'
 import style from './Footer.module.css'
-// import evFooter_logo from '../../img/Evangadi-footer-logo.png'
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -13,7 +12,7 @@ function Footer() {
         <div className={style.footer_container}>
           <div className={style.footer_left}>
             <div className={style.logo}>
-              <img src='/public/img/Evangadi-footer-logo.png' alt="Evangadi-Logo" />
+              <img src='/img/Evangadi-footer-logo.png' alt="Evangadi-Logo" />
             </div>
             <div className={style.socials}>
               <span><a    

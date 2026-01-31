@@ -270,23 +270,24 @@ function QuestionDetail() {
                   <small className={style.new_badge}>New</small>
                 ) : null}
               </div>
-              <div className={style.answer_avatar}>
-             
-                <img
-                    loading="lazy"
-                    src={
-                      ansGet.avatar
-                        ? `${BACKEND_URL}${ansGet.avatar}`
-                        : "/img/avator.png"
-                    }
-                    alt={ansGet.username ? ansGet.username.charAt(0).toUpperCase() : "?"}
-                  />
+              <div className={style.avatar_block}>
+                <div className={style.answer_avatar}>
+                    <img
+                        loading="lazy"
+                        src={
+                          ansGet.avatar
+                            ? `${BACKEND_URL}${ansGet.avatar}`
+                            : "/img/avator.png"
+                        }
+                        alt={ansGet.username ? ansGet.username.charAt(0).toUpperCase() : "?"}
+                      />
+                </div>
+                  <small className={style.answer_user}>{ansGet.username}</small>
               </div>
 
               <div className={style.answer_content}>
                 <p className={style.answer_text}>{ansGet.answer}</p>
                 <div className={style.answer_meta}>
-                  <span className={style.answer_user}>{ansGet.username}</span>
                   <div className={style.day_and_counter}>
                     <span className={style.answer_time}>
                       <CalendarMonthIcon />
