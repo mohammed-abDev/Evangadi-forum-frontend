@@ -1,0 +1,176 @@
+/* Header */
+.header {
+    width: 100%;
+    min-height: 80px;
+    background: #ffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+/* Container*/
+.header_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    color: #ff8500;
+}
+
+.nav a:focus,
+.btn_signin:focus {
+    outline: 0.7px solid #4f6ef7;
+    outline-offset: 2px;
+}
+
+/* Active State */
+.nav a.active {
+    color: #ff8500;
+    font-weight: 600;
+}
+
+/* Button Styling */
+.btn_signin {
+    padding: 6px 45px;
+    background: #4f6ef7;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.btn_signin:hover {
+    background: #ff4500;
+    box-shadow: 0 4px 8px rgba(79, 110, 247, 0.2);
+}
+.userProfileWrapper {
+    position: relative;
+}
+
+.userProfile {
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    border: 2px solid #ccc;
+    transition: 0.2s;
+}
+
+.userProfile img {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userProfile:hover {
+    border-color: #4f6ef7;
+}
+
+.profileDropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 350px; 
+    z-index: 1000;
+    background: transparent; 
+}
+.showOnline {
+    position: absolute;
+    bottom: 6px;    
+    right: 0;
+    width: 11px;   
+    height: 11px;
+    background-color: #4caf50; 
+    border: 2px solid white; 
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+.menuIcon { 
+    display: none; 
+    }
+.menuIcon:hover{
+    background-color:#f8f8fa;
+}    
+
+/* Tablet + Mobile */
+@media (max-width: 1024px) { 
+    .menuIcon { 
+        display: block; 
+        cursor: pointer; 
+        font-size: 28px;
+    } 
+    .nav { 
+        display: none;
+        position: absolute; 
+        top: 80px; 
+        left: 0; 
+        background: white; 
+        width: 100%; 
+        flex-direction: column; 
+        padding: 20px; 
+        gap: 15px; 
+        box-shadow: 0 4px 10px #0000001a; 
+    } 
+    .nav_open { 
+        display: flex; 
+    } 
+    .btn_signin { 
+        padding: 15px 100px !important; 
+    }
+} 
+    /* Mobile */ 
+    @media (max-width: 768px) { 
+    .header_container { 
+        width: 90%; 
+    } 
+    .logo img { 
+        height: 26px; 
+    } 
+    .btn_signin { 
+        font-size: 14px;
+        padding: 6px 30px; 
+    } 
+}
+
+

@@ -1,0 +1,301 @@
+/* REGISTER PAGE */
+.signup {
+    min-height: 90vh;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.loader_container { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: #ffffff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 9999; 
+
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 1px 20vh;
+}
+
+/* REGISTER CARD */
+.right {
+    flex: 1;
+    min-width: 450px;
+    max-width: 500px;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.right_center {
+    text-align: center;
+}
+
+.right_center p a {
+    color: #ff8500;
+    text-decoration: none;
+}
+
+.right h3 {
+    margin-bottom: 10px;
+    color: #111;
+    text-align: center;
+}
+
+.right p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #444;
+    text-align: center;
+}
+
+/* FORM */
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.form input:focus {
+    border-color: #4f6ef7;
+    outline: none;
+}
+
+
+/* PASSWORD BOX */
+.passwordBox {
+    position: relative;
+    width: 100%;
+}
+
+.passwordBox input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    background-color: white;
+    width: 100% !important;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.eyeIcon:hover {
+    color: #4f6ef7;
+}
+
+/* FIRST and LAST NAME */
+.FL_name_input {
+    display: flex;
+    gap: 8px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+}
+.fielderror {
+    color: red !important;
+    font-size: 13px;
+    margin-top: 2px;
+    text-align: left;
+    align-self: flex-start;
+    /* font-size: 13px;
+    margin-top: 1px;
+    color: red !important; */
+}
+
+.errorRow p{
+    
+    text-align: left !important;
+    align-self: flex-start !important;
+}
+
+/* SUCCESS MESSAGE */
+.success {
+    background: #e6ffed;
+    color: #2d7a46;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* SUBMIT BUTTON */
+.form button {
+    margin-top: 10px;
+    padding: 12px 30px;
+    background: #4f6ef7;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form button:hover {
+    background: #3a5ce0;
+}
+
+/* SIGN-IN LINK */
+.signin {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff8500;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* LEFT ABOUT CARD */
+.left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding-top: 40px;
+}
+
+.left{
+    border: 1px solid #ff8500; 
+    padding: 30px 30px ;
+    border-radius: 40px 0 40px 0; 
+    background: #fff; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.left h2 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #2d385e;
+}
+
+.left p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.loginBtn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff8500;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.loginBtn:hover {
+    background: #e37300;
+}
+
+.container {
+  display: flex;
+}
+
+.right { order: 2; }  
+.left  { order: 1; }  
+
+
+.container{
+    animation: leftFade 0.6s ease forwards;
+}
+
+@keyframes leftFade {
+    from {
+        opacity: 0.2;
+        transform: translateX(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .right,
+    .left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .right {
+        padding: 40px 25px;
+    }
+   
+
+    .form input {
+        padding: 12px 15px;
+    }
+  
+    .form button,
+    .loginBtn {
+        width: 100%;
+        text-align: center;
+    }
+    .FL_name_input {
+        display: flex;
+        flex-direction: column;
+    }
+}  
+
+@media (max-width: 480px) {
+    .right h3 {
+        font-size: 20px;
+    }
+
+    .left h2 {
+        font-size: 26px;
+    }
+    .FL_name_input input:last-child{
+        min-width: 300px !important;
+    }
+}

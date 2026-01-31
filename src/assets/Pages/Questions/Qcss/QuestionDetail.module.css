@@ -1,0 +1,470 @@
+.qna_page {
+  max-width: 1050px;
+  margin: 50px auto;
+  padding: 0 20px 80px;
+}
+
+/* -- Question -- */
+.question_card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 2px solid #4f6ef7;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  animation: fadeUp 0.4s ease;
+  background: transparent;
+}
+.question_card a{
+  text-decoration: none;
+  color: #222;
+}
+
+.userBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+/* Avatar circle */
+.answer_avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ff8500;
+  flex-shrink: 0;
+}
+
+.answer_avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* User text */
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  color: #111827;
+  font-size: 14px;
+}
+
+.user_bio {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.question_card  h4{
+  font-weight: bold;
+  margin-bottom: 0;
+ 
+}
+
+.question_title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  opacity: 0.9;
+  margin: 1px;
+  position: relative;
+  border-left: 2px  #ff8500;
+  border-style:inherit;
+  background-color: rgba(255, 133, 0, 0.07); 
+}
+
+.question_desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+.answer_counter{
+  font-size: 12px; 
+  color: #555; 
+  background: #f0f3ff;
+  border: 1px solid #4f6ef7; 
+  border-radius: 8px; 
+  padding: 3px 6px; 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px; 
+  align-self: flex-start; 
+}
+
+/* -- Answers -- */
+.answers_section {
+  margin-bottom: 60px;
+}
+
+.answers_title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e5e9f5;
+}
+
+
+/* no_answers */
+.no_answers {
+  color: gray;
+  font-style: italic;
+}
+
+
+.highlight {
+  background-color: #3CB371;
+  color: rgba(255, 255, 255, 0.945);
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 8px;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+
+/* Answer Card */
+.answer_card {
+  display: flex;
+  gap: 18px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+  border:  1px solid #b7c4ff;
+  position: relative;
+}
+
+.answer_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(79,110,247,0.12);
+}
+
+.answer_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid #ff8500;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #516cf0; 
+}
+
+.answer_avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.answer_content {
+  flex: 1;
+}
+
+.answer_text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.answer_user {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4f6ef7;
+}
+
+.answer_meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+.answer_user {
+  font-weight: 600;
+  color: #444;
+}
+
+.answer_time {
+  color: #555; 
+  background: #f0f3ff;
+  border: 1px solid #6a85fc;
+  border-radius: 8px; 
+  padding: 3px 6px; 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px; 
+  align-self: flex-start; 
+}
+.answer_time svg{
+  font-size: 18px;
+}
+.day_and_counter{
+  display: flex;
+}
+/*Edit Delete */
+.edit_delete{
+  position: absolute;
+  right: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.edit_delete span{
+  color: #555; 
+  background: #f0f3ff;
+  border: 1px solid #d9dffa; 
+  border-radius: 8px; 
+  padding: 3px 6px; 
+  display: inline-flex; 
+  align-items: center; 
+  align-self: flex-start;
+}
+.edit_delete span svg{
+  font-size: 18px;
+}
+.edit_delete span:hover{
+  color: #555; 
+  background: #f0f3ff;
+  border: 1px solid #4f6ef7; 
+}
+.edit_delete span:last-child:hover{
+  background:#d9534f;
+  color: #f8f8f8;
+}
+
+
+.edit_question span:hover{
+  color: #555 !important; 
+  background: #f0f3ff !important;
+  border: 1px solid #4f6ef7 !important; 
+}
+
+.edit_box input {
+  width: 90%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #6a85fc;
+}
+
+
+/* new or not */
+.new_badge {
+    background-color: #2ECC71;   
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-right: 6px;
+    position: absolute;
+    top:1px;
+    right:3px;
+
+}
+/* Post Answer */
+.answer_box {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 35px 40px;
+  border-radius: 0 14px 0 0 ;
+  box-shadow:  4px 0 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.answer_box:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+}
+
+.answer_box h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.answer_box a {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+.answer_box a:hover{
+  color: #000000a7;
+}
+
+/* Textarea */
+.answer_textarea {
+  min-height: 160px;
+  resize: vertical;
+  transition: all 0.2s ease;
+  width: 90%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.answer_textarea:focus {
+  outline: none;
+  border-color: #4f6ef7;
+  box-shadow: 0 0 0 2px rgba(79,110,247,0.15);
+}
+
+/* Button */
+.answer_btn {
+  margin-top: 25px;
+  background-color:#4f6ef7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.answer_btn:hover {
+  background-color: #4566f8;
+}
+
+/* Animations  */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* edit exist answer */
+.edit_box { 
+  all: unset;
+  display: block; 
+  margin-bottom: 12px; 
+  padding: 12px; 
+  background-color: #f8f8f8; 
+  border-radius: 8px; } 
+  /* Textarea styling */ 
+  .edit_box textarea { 
+    all: unset; 
+    width: 90%;
+    display: flex; 
+    min-height: 160px; 
+    padding: 16px; 
+    font-size: 15px; 
+    line-height: 1.5; 
+    background: #fff; 
+    border: 1px solid #4f6ef7; 
+    border-radius: 8px; 
+    resize: vertical; 
+    animation: popupScale 0.2s ease; 
+    box-sizing: border-box; }
+
+.edit_box textarea:focus {
+  outline: none;
+  border-color: #4f6ef7;
+  box-shadow: 0 0 0 2px rgba(79,110,247,0.15);
+}
+.edit_box button {
+  all: unset;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #4f6ef7;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.edit_box button:last-child {
+  /* background: #ff4500; */
+  background: #6c757d;
+
+}
+
+/* confirmation */
+.confirmOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+/* Animation */
+@keyframes popupScale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.confirmBox {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  animation: popupScale 0.2s ease;
+}
+
+.confirmButtons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  background: #d9534f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #6c757d;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.cancelBtn:hover,
+.deleteBtn:hover{
+  opacity: 0.6;
+}

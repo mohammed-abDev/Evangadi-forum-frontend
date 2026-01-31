@@ -1,0 +1,64 @@
+
+    .NotFound_bg_img {
+    background: url('https://img.freepik.com/premium-vector/404-error-with-portals-concept-illustration_114360-7870.jpg');
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nf_container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+.nf_title {
+    font-size: 48px;
+    color: #333;
+    font-weight: bold;
+}
+
+.nf_text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.nf_btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #ff7e69;
+    color: #ffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #33333348;
+    transition: background 0.3s;
+}
+
+.nf_btn:hover {
+    background: #39383848;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .nf_title {
+        font-size: 36px;
+    }
+    
+    .nf_text {
+        font-size: 16px;
+    }
+    
+    .nf_container {
+        padding: 30px 20px;
+    }
+}
