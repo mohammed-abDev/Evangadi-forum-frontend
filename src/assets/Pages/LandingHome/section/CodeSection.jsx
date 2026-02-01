@@ -134,7 +134,46 @@ function CodeSection() {
                     Click on the "Login" button to access your account.
                   </span>
                 </div>
+                <div className={style.code_text}>##after Login you can </div>
+                    <div className={style.code_line}>
+                      <span className={style.line_number}>14</span>
+                      <span className={style.code_bullet}>•</span>
+                      <span className={style.code_text}>
+                        Ask questions related to programming, technology, or learning topics.
+                      </span>
+                    </div>
 
+                    <div className={style.code_line}>
+                      <span className={style.line_number}>15</span>
+                      <span className={style.code_bullet}>•</span>
+                      <span className={style.code_text}>
+                        Browse existing questions and learn from community answers.
+                      </span>
+                    </div>
+
+                    <div className={style.code_line}>
+                      <span className={style.line_number}>16</span>
+                      <span className={style.code_bullet}>•</span>
+                      <span className={style.code_text}>
+                        Like, dislike, edit, delete, and interact with questions and answers.
+                      </span>
+                    </div>
+                    
+                    <div className={style.code_line}>
+                      <span className={style.line_number}>17</span>
+                      <span className={style.code_bullet}>•</span>
+                      <span className={style.code_text}>
+                        Use Ask Evangadi (AI) for instant help and explanations.
+                      </span>
+                    </div>
+
+                    <div className={style.code_line}>
+                      <span className={style.line_number}>18</span>
+                      <span className={style.code_bullet}>•</span>
+                      <span className={style.code_text}>
+                        Evangadi is a learning-focused community built to help users grow together.
+                      </span>
+                    </div>
                 <div className={style.code_scroll}>
                   <MouseIcon className={style.moouse} /> Scroll and navigate for more ...
                 </div>

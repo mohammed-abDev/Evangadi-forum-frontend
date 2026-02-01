@@ -189,3 +189,21 @@
 .code_scroll{
     color: #e0e0e0;
 }
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .content_wrapper{
+        flex-direction: column;
+    }
+
+    .main_title {
+    font-size: 2.5rem;
+}}
+@media (max-width: 768px) {
+    .content_wrapper{
+        flex-direction: column;
+    }
+
+    .main_title {
+    font-size: 1.5rem;
+}}

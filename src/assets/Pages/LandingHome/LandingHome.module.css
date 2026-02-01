@@ -155,6 +155,7 @@
     background: #2d2d30;
     border-right: 1px solid #3e3e42;
     padding: 1rem 0;
+    text-align: start;
 }
 
 .sidebar_tabs {
@@ -221,6 +222,7 @@
     flex: 1;
     overflow-y: auto;
     max-height: 400px;
+    text-align: start;
 }
 
 .code_line {
